@@ -1,3 +1,4 @@
+
 Dev : 
 	
 	code write => git push : nodeModules
@@ -21,3 +22,10 @@ DevOps :
 					}
 					
 	reload nginx
+
+
+GITHUB :
+
+	git clone : first time to create the repo locally as per gitHUb
+	git fetch : update ur local git repo with respect to github repo
+	git pull : get all the new changes locally from github
