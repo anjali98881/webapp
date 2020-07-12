@@ -1,0 +1,21 @@
+
+
+1. AWS Elastic Beanstalk
+
+    - create env => EC2
+    - default application => nodejs
+
+2. AWS codeBuild
+
+    - create a project
+    - add the yaml file in buildspec
+
+3. AWS CodeDeploy
+
+
+4. AWS codePipeline
+
+    - Create a codePipeline
+    - git => codebuilod/project buildspec => codeDeploy
+                                            s3 => ec2
+                                            codeBuild => Beanstalk

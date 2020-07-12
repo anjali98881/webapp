@@ -5,8 +5,8 @@ phases:
   pre_build:
     commands:
       - echo configuring nginx server
-      - rm -r /etc/nginx/site-available/default
-      - cp ./default.config /etc/nginx/site-available/
+      - rm -r /etc/nginx/sites-available/default
+      - cp ./default.config /etc/nginx/sites-available/
   build:
     commands:
        - npm install
