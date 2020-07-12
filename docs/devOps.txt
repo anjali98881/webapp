@@ -1,8 +1,23 @@
 
+EC2 :
+
+    Environment => vcpu, ram, storage, os, port
+    launch => 
+            update repo ; linux repo
+            install applciation
+                1. java, maven, cavel, apache
+                2. node, npm, mongoDB, nginx
+            server/loadbalancer : nginx/apache
+                server port 
+                server name
+                ssl : https
+                location : every applciation
+
+
 Dev : 
 	
 	code write => git push : nodeModules
-							 packaghe-lock.json
+							 package-lock.json
 	GitHub => withoud nodemodules
 	
 	
