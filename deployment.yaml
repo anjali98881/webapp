@@ -18,3 +18,8 @@ phases:
     commands:
       - echo reloading nginx server
       - systemctrl reload nginx
+
+  deploy:
+    commands:
+      - echo deploy phase
+      - pwd
