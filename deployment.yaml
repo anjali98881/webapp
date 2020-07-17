@@ -17,7 +17,6 @@ phases:
   post_build:
     commands:
       - echo reloading nginx server
-      - systemctrl reload nginx
 
   deploy:
     commands:
