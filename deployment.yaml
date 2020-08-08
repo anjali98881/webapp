@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+
+  pre_build:
+    commands:
+      - echo configuring nginx server
+      #- rm -r /etc/nginx/sites-available/default
+      - pwd
+      #- cp ./default.config /etc/nginx/sites-available/
+  build:
+    commands:
+       - npm install
+       - npm install -g pm2
+       - pm2 start server.js
+       - echo application build successuful
+  post_build:
+    commands:
+      - echo reloading nginx server
+
+  deploy:
+    commands:
+      - echo deploy phase
+      - pwd

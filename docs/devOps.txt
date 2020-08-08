@@ -1,0 +1,46 @@
+
+EC2 :
+
+    Environment => vcpu, ram, storage, os, port
+    launch => 
+            update repo ; linux repo
+            install applciation
+                1. java, maven, cavel, apache
+                2. node, npm, mongoDB, nginx
+            server/loadbalancer : nginx/apache
+                server port 
+                server name
+                ssl : https
+                location : every applciation
+
+
+Dev : 
+	
+	code write => git push : nodeModules
+							 package-lock.json
+	GitHub => withoud nodemodules
+	
+	
+DevOps : 
+
+	AWS Login => home/ubuntu
+			  => etc/nging/site-available/default
+			  
+	/home/ubuntu => git clone/git fetch + git pull
+				 => npm install : dependencies / new dependencies
+				 => npm run build
+				 => npm run start
+				 => localhost:3000
+				 
+	/etc/nginx.. => location /publisher {
+						proxy_pass localhost:3000
+					}
+					
+	reload nginx
+
+
+GITHUB :
+
+	git clone : first time to create the repo locally as per gitHUb
+	git fetch : update ur local git repo with respect to github repo
+	git pull : get all the new changes locally from github

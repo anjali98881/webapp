@@ -1,0 +1,21 @@
+
+
+CI/CD :
+
+    CI :
+        github/bitbucket
+
+    CD :
+        deploy to server/aws ec2
+        steps : 
+            environment :> 
+                        linux update
+                        cleanup : remove old code
+            git clone new code
+            install dependencies
+            tests :
+                unit test run   : npm run test
+                integration test
+                regression testing
+            build application
+            start application
